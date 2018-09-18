@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Calculator_Assets {
+	
+	static Scanner newInput = new Scanner(System.in);
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+	String a = (newInput.nextLine());
+	String num1 = newInput.nextLine();
+	String num2 = newInput.nextLine();
+		// TODO Auto-generated method stub
+	float b;
+	float res;
+	char c;
+	c = newInput.next().charAt(0);
+		a = (newInput.nextLine());
+	}
+
+}
