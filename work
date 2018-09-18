@@ -1,0 +1,107 @@
+# JavaCalc
+
+import java.util.Scanner;
+import java.awt.*;
+import javax.swing.JLabel;
+import javax.swing.JApplet;
+import javax.swing.JFrame;
+import java.util.Scanner;
+public class Calculator extends Calculator_Assets
+
+{
+
+	public static void main(String[] args) {
+		
+		picture(); {
+		
+		System.out.println("Choose One!");
+		
+		System.out.println("1. Addition\n");
+		
+		System.out.println("2. Subtraction\n");
+		
+		System.out.println("3. Multiplication\n");
+		
+		System.out.println("4. Division\n");
+		
+		//prints out the users input, not their mathematical selection
+	String word = newInput.nextLine();
+	if (word.equals("1")) {
+			System.out.println("You have chosen Addition!");
+			addition();
+			
+			
+	}
+	else if (word.equals("2")) {			
+			System.out.println("You have chosen Subtraction!");
+	subtraction();
+	}
+	else if (word.equals("3")) {
+			System.out.println("You have chosen Multiplication!");
+	multiplication();		
+	}
+	else if (word.equals("4")) {
+			System.out.println("You have chosen Division!");
+		//Break here, to input integers
+	division();		
+	}
+	
+		}
+		
+	}
+	public static void addition() {
+		System.out.println("Enter two numbers to add:\n");	
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println("The sum =" + (num1 + num2));
+	}
+	
+	public static void subtraction() {
+		System.out.println("Enter two numbers to subtract:\n");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println("The difference = " + (num1 - num2));
+	}
+	public static void multiplication() {
+		System.out.println("Enter two numbers to multiply: \n");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println("The product = " + (num1 * num2));
+	
+	}
+	public static void division() {
+		System.out.println("Enter two numbers to divide; (not 0 pl0x :) \n");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		System.out.println("The quotient = " + (num1 / (double)num2));
+		
+	}
+	public static void doubleAdd() {
+		double num1 = scan.nextInt();
+		double num2 = scan.nextInt();
+		System.out.println("The sum = " + (num1 + num2));
+	}
+	public static void picture() {
+		JFrame frame = new JFrame ();
+		frame.setVisible(true);
+		frame.setSize(500, 500);
+		JLabel label = new JLabel("Chance's Calculator");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	}
+
+	
+	
+		
+		
+	
+		
+	
+	
+	
+	
+
+	
+
+
